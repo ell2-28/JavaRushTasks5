@@ -97,16 +97,16 @@ public class Snake {
         GameObject result = null;
         switch (direction) {
             case LEFT:
-                result = new GameObject(x - 1, y);
+                result = new GameObject(snakeParts.get(0).x - 1, snakeParts.get(0).y);
                 break;
             case RIGHT:
-                result = new GameObject(x + 1, y);
+                result = new GameObject(snakeParts.get(0).x + 1, snakeParts.get(0).y);
                 break;
             case UP:
-                result = new GameObject(x, y - 1);
+                result = new GameObject(snakeParts.get(0).x, snakeParts.get(0).y - 1);
                 break;
             case DOWN:
-                result = new GameObject(x, y + 1);
+                result = new GameObject(snakeParts.get(0).x, snakeParts.get(0).y + 1);
                 break;
         }
         return result;

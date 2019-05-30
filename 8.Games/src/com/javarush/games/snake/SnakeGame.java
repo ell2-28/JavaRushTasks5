@@ -96,13 +96,13 @@ public class SnakeGame extends Game {
     private void gameOver() {
         this.stopTurnTimer();
         isGameStopped = true;
-        this.showMessageDialog(Color.RED, "Game Over", Color.GREEN, 10);
+        this.showMessageDialog(Color.RED, "Game Over", Color.GREEN, 30);
     }
 
     private void win() {
         stopTurnTimer();
         isGameStopped = true;
-        showMessageDialog(Color.RED, "UWIN", Color.GREEN, 15);
+        showMessageDialog(Color.RED, "UWIN", Color.GREEN, 40);
 
     }
 
