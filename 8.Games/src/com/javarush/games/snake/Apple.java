@@ -15,6 +15,6 @@ public class Apple extends GameObject {
     private static final String APPLE_SIGN = "\uD83C\uDF4E";
 
     public void draw(Game g) {
-        g.setCellValueEx(5, 5, Color.NONE, APPLE_SIGN, Color.YELLOW, 75);
+        g.setCellValueEx(x, y, Color.NONE, APPLE_SIGN, Color.YELLOW, 75);
     }
 }

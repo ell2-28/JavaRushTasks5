@@ -79,8 +79,7 @@ public class Snake {
             isAlive = false;
             return;
         }
-        if (newHead.x < 0 || newHead.x >= SnakeGame.WIDTH ||
-                newHead.y < 0 || newHead.y >= SnakeGame.HEIGHT) {
+        if (isOutOfScreen(newHead)) {
             isAlive = false;
             return;
         }
@@ -91,6 +90,11 @@ public class Snake {
         }
         snakeParts.add(0, newHead);
 
+    }
+
+    private boolean isOutOfScreen(GameObject newHead) {
+        return newHead.x < 0 || newHead.x >= SnakeGame.WIDTH ||
+                newHead.y < 0 || newHead.y >= SnakeGame.HEIGHT;
     }
 
     public GameObject createNewHead() {
